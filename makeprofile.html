@@ -1,0 +1,86 @@
+<!-- Dan Weaver -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Messiah Village Community Board</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<!-- <script src="main.js"></script> -->
+</head>
+<body>
+
+	<!--Navigation bar-->
+	<div id="nav-placeholder">
+
+	</div>
+
+	<script>
+		$(function(){
+			$("#nav-placeholder").load("navbar.html");
+		});
+	</script>
+	<!--end of Navigation bar-->
+
+	<br>
+	<div>
+		<h3>Continue making a profile if you are a...</h3>
+		<br>
+		<ol>
+			<li>Messiah Village Resident</li>
+			<li>Messiah Village Team Member</li>
+			<li>Resident's Family Member</li>
+		</ol>
+	</div>
+	<br>
+	<div>
+		<h2>Make Your Profile</h2>
+		<br>
+		<!-- <form method="POST" action="signin.html"> --> <!--uncomment when ready for live website-->
+		<form action="signin.html"> <!--comment when ready for live website-->
+
+			<p>
+  				<label for="name">First and Last Name</label>
+				<input type="text" id="name" name="name"><br><br>
+			</p>
+			<p>
+				<label for="email">Email Address</label>
+				<input type="text" id="email" name="email"><br><br>
+			</p>  
+			<p>
+				<label for="password">Password</label>
+              	<input type="password" id="password" name="password"><br><br>
+			</p>
+			<p>
+				<label for="password">Confirm Password</label>
+              	<input type="password" id="cpassword" name="cpassword"><br><br>
+			</p>
+			<p>  
+			<label for="type">You Are A</label>
+  			<select id="type">
+  				<option value="resident">Resident</option>
+  				<option value="team_member">Team Member</option>
+  				<option value="family">Resident's Family</option>
+			</p>
+			<p>  
+			</select>
+  			<input type="submit" id="prof_submit" value="Submit">
+			</p>
+		</form>
+	</div>	
+	<br>
+	<br>
+	
+	<!--footer-->
+	<div id="footer-placeholder">
+
+	</div>
+
+	<script>
+		$(function(){
+			$("#footer-placeholder").load("footer.html");
+		});
+	</script>
+	<!--end of footer-->
+
+</body>
+</html>

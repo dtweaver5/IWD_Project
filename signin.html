@@ -1,0 +1,60 @@
+<!-- Dan Weaver -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign In</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <!-- <script src="main.js"></script> -->
+
+    </head>
+    <body>
+        <!--Navigation bar-->
+        <div id="nav-placeholder">
+
+        </div>
+
+        <script>
+            $(function(){
+                $("#nav-placeholder").load("navbar.html");
+            });
+        </script>
+        <!--end of Navigation bar-->
+    
+        <br>
+        <div>
+            <h3>Sign in to your profile!</h3>
+        </div>
+        <br>
+        <div>
+            <!-- <form method="POST" action="login.php"> --> <!--uncomment when ready for live website--> 
+            <form action="cboard1.html"> <!--comment when ready for live website-->
+
+                <label for="email">Email Address</label>
+                <input type="text" id="email" name="email"><br><br>
+                <p></p>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password"><br><br>
+                <input type="submit" id="sign_in_btn" value="Submit">
+            </form>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+	<!--footer-->
+	<div id="footer-placeholder">
+
+	</div>
+
+	<script>
+		$(function(){
+			$("#footer-placeholder").load("footer.html");
+		});
+	</script>
+	<!--end of footer-->
+
+
+    </body>
+</html>
